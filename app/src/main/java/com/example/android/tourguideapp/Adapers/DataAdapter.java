@@ -31,26 +31,23 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
     @NonNull
     @Override
     public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.data_row_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.data_row_item, parent, false);
 
-        return  new DataViewHolder(view);
+        return new DataViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DataViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.image.setImageResource(dataList.get(position).getImageUrl());
         holder.name.setText(dataList.get(position).getName());
-   //     holder.web.setImageResource(dataList.get(position).getWeb_search());
-   //     holder.loc.setImageResource(dataList.get(position).getLocation());
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(context, DetailActivity.class);
-                i.putExtra("Image",(dataList.get(position).getImageUrl()));
-                i.putExtra("name",(dataList.get(position).getName()));
-                i.putExtra("web",(dataList.get(position).getWeb_search()));
-                i.putExtra("loc",(dataList.get(position).getWeb_search()));
+                Intent i = new Intent(context, DetailActivity.class);
+                i.putExtra("Image", (dataList.get(position).getImageUrl()));
+                i.putExtra("name", (dataList.get(position).getName()));
+                i.putExtra("web", (dataList.get(position).getWeb_search()));
+                i.putExtra("loc", (dataList.get(position).getWeb_search()));
                 context.startActivity(i);
             }
         });
@@ -61,17 +58,17 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
         return dataList.size();
     }
 
-    public static class DataViewHolder extends RecyclerView.ViewHolder{
+    public static class DataViewHolder extends RecyclerView.ViewHolder {
 
         TextView name;
-        ImageView image,web,loc;
+        ImageView image, web, loc;
 
         public DataViewHolder(@NonNull View itemView) {
             super(itemView);
-            name=itemView.findViewById(R.id.textView);
-            image=itemView.findViewById(R.id.imageView);
-            web=itemView.findViewById(R.id.web);
-            loc=itemView.findViewById(R.id.loc);
+            name = itemView.findViewById(R.id.textView);
+            image = itemView.findViewById(R.id.imageView);
+            web = itemView.findViewById(R.id.web);
+            loc = itemView.findViewById(R.id.loc);
         }
     }
 }
