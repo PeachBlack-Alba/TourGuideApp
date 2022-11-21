@@ -43,10 +43,10 @@ public class PlacesFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         placedata=new ArrayList<>();
-        placedata.add(new Data("Sagrada Família",R.drawable.place_sagrada));
-        placedata.add(new Data("Gothic Quarter",R.drawable.place_gothic));
-        placedata.add(new Data("La Pedrera",R.drawable.place_pedrera));
-        placedata.add(new Data("Bogatell Beach",R.drawable.place_bogatell));
-        placedata.add(new Data("Palace of Catalan Music",R.drawable.place_musica));
+        placedata.add(new Data(R.string.sagrada,R.drawable.place_sagrada));
+        placedata.add(new Data(R.string.gothic,R.drawable.place_gothic));
+        placedata.add(new Data(R.string.pedrera,R.drawable.place_pedrera));
+        placedata.add(new Data(R.string.bogatell,R.drawable.place_bogatell));
+        placedata.add(new Data(R.string.music,R.drawable.place_musica));
     }
 }

@@ -44,10 +44,10 @@ public class HotelFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         hoteldata=new ArrayList<>();
-        hoteldata.add(new Data("Hotel Aqua",R.drawable.hotel_aqua));
-        hoteldata.add(new Data("Hotel Mandarin Oriental",R.drawable.hotel_mandarin));
-        hoteldata.add(new Data("Hotel Arts",R.drawable.hotel_arts));
-        hoteldata.add(new Data("Hotel Axel",R.drawable.hotel_axel));
-        hoteldata.add(new Data("Hotel W",R.drawable.hotel_w));
+        hoteldata.add(new Data(R.string.aqua,R.Aquadrawable.hotel_aqua));
+        hoteldata.add(new Data(R.string.oriental,R.drawable.hotel_mandarin));
+        hoteldata.add(new Data(R.string.arts,R.drawable.hotel_arts));
+        hoteldata.add(new Data(R.string.axel,R.drawable.hotel_axel));
+        hoteldata.add(new Data(R.string.w,R.drawable.hotel_w));
     }
 }

@@ -43,10 +43,10 @@ public class MallsFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         malldata=new ArrayList<>();
-        malldata.add(new Data("Las Arenas",R.drawable.mall_arenas));
-        malldata.add(new Data("La Maquinista",R.drawable.mall_maquinista));
-        malldata.add(new Data("Maremagnum",R.drawable.mall_maremagnum));
-        malldata.add(new Data("Diagonal Mar",R.drawable.mall_diagonal));
-        malldata.add(new Data("Pedralbes",R.drawable.mall_pedralbes));
+        malldata.add(new Data(R.string.arenas,R.drawable.mall_arenas));
+        malldata.add(new Data(R.string.maquinista,R.drawable.mall_maquinista));
+        malldata.add(new Data(R.string.maremagnum,R.drawable.mall_maremagnum));
+        malldata.add(new Data(R.string.diagonal,R.drawable.mall_diagonal));
+        malldata.add(new Data(R.string.pedralbes,R.drawable.mall_pedralbes));
     }
 }

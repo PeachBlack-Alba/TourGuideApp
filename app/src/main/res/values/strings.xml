@@ -6,4 +6,19 @@
     <string name="tapas">Tapas</string>
     <string name="burger">Burger</string>
     <string name="paella">Paella</string>
+    <string name="aqua">Hotel Aqua</string>
+    <string name="oriental">Hotel Mandarin Oriental</string>
+    <string name="arts">Hotel Arts</string>
+    <string name="axel">Hotel Axel</string>
+    <string name="w">Hotel W</string>
+    <string name="arenas">Las Arenas</string>
+    <string name="maquinista">La Maquinista</string>
+    <string name="maremagnum">Maremagnum</string>
+    <string name="diagonal">Diagonal Mar</string>
+    <string name="pedralbes">Pedralbes</string>
+    <string name="sagrada">Sagrada Família</string>
+    <string name="gothic">Gothic Quarter</string>
+    <string name="pedrera">La Pedrera</string>
+    <string name="bogatell">Bogatell Beach</string>
+    <string name="music">Palace of Catalan Music</string>
 </resources>
